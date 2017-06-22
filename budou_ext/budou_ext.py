@@ -11,6 +11,7 @@ _parser = None
 
 SCOPES = ('https://www.googleapis.com/auth/cloud-platform',)
 STORAGE_KEY = 'Grow SDK - Budou'
+SUPPORTED_LANGUAGES = ['ja']
 
 
 def _get_parser():
@@ -28,7 +29,7 @@ def _get_parser():
 @jinja2.contextfilter
 def do_budou(context, value):
     doc = context.get('doc')
-    if doc.locale.language == 'ja':
+    if doc.locale and doc.locale.language in SUPPORTED_LANGUAGES:
         data = _get_parser().parse(value)
         return jinja2.Markup(data['html_code'])
     return value

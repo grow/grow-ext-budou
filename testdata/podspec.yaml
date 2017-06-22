@@ -1,0 +1,9 @@
+extensions:
+  jinja2:
+  - extensions.budou_ext.BudouExtension
+
+localization:
+  default_locale: en
+  locales:
+  - en
+  - ja

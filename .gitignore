@@ -1,0 +1,5 @@
+**.mo
+testdata/.podcache
+testdata/budou-cache.shelve.db
+testdata/build/
+testdata/extensions/
