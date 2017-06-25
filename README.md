@@ -1,5 +1,7 @@
 # grow-ext-budou
 
+[![Build Status](https://travis-ci.org/grow/grow-ext-budou.svg?branch=master)](https://travis-ci.org/grow/grow-ext-budou)
+
 Budou extension for Grow.
 
 ## Concept
