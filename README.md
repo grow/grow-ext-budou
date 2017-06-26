@@ -46,3 +46,15 @@ extensions:
 <span class="ww">六本木</span><span class="ww">ヒルズに</span><span
 class="ww">います。</span>
 ```
+
+### In CSS
+
+Budou works by wrapping elements that should not be wrapped in a
+`<span class="ww">` element. Add the following CSS to prevent these
+elements from wrapping.
+
+```
+.wordwrap {
+  display: inline-block;
+}
+```
