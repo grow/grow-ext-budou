@@ -11,7 +11,13 @@ _parser = None
 
 SCOPES = ('https://www.googleapis.com/auth/cloud-platform',)
 STORAGE_KEY = 'Grow SDK - Budou'
-SUPPORTED_LANGUAGES = ['ja']
+SUPPORTED_LANGUAGES = [
+    'ja',
+    'ko',
+    'zh',
+    'zh_Hans',
+    'zh_Hant',
+]
 
 
 def _get_parser():
