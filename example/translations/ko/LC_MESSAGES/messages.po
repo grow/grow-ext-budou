@@ -1,0 +1,4 @@
+#: /views/base.html:4
+msgid "I will eat rice at Roppongi Hills."
+msgstr "나는 롯폰기 힐즈에서 쌀을 먹을 것이다."
+
