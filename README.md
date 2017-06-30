@@ -60,7 +60,7 @@ Budou works by wrapping elements that should not be wrapped in a
 elements from wrapping.
 
 ```
-.wordwrap {
+.ww {
   display: inline-block;
 }
 ```
