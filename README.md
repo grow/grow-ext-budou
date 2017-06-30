@@ -9,7 +9,13 @@ Budou extension for Grow.
 Installs a filter into the Jinja2 environment that uses the Google Cloud
 Natural Language API to analyze text and insert `<span>` tags into HTML for
 intelligent word wrapping. The filter only activates when a page is being
-rendered in a supported language. Currently, this is Japanese (`ja`).
+rendered in a supported language. Supported language identifiers:
+
+- ja
+- ko
+- zh
+- zh_Hans
+- zh_Hant
 
 For more information on Budou, see the
 [`google/budou`](https://github.com/google/budou) repository.
