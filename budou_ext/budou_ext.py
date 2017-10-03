@@ -33,10 +33,13 @@ def _get_parser():
 
 
 @jinja2.contextfilter
-def do_budou(context, value):
+def do_budou(context, value, options=None):
+    if options is None:
+        options = {}
+
     doc = context.get('doc')
     if doc.locale and doc.locale.language in SUPPORTED_LANGUAGES:
-        data = _get_parser().parse(value)
+        data = _get_parser().parse(value, **options)
         return jinja2.Markup(data['html_code'])
     return value
 
