@@ -28,7 +28,7 @@ def _get_parser():
         http = httplib2.Http(ca_certs=utils.get_cacerts_path())
         http = credentials.authorize(http)
         service = discovery.build('language', 'v1beta2', http=http)
-        _parser = budou.Budou(service)
+        _parser = budou.get_parser('nlapi', service=service)
     return _parser
 
 
